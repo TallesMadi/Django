@@ -1,0 +1,48 @@
+/* Reset */
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(166, 250, 40);
+}
+
+html {
+    font-size: 62.5%
+}
+
+body {
+    font-size: 1.6rem;
+    background-color: rgb(22, 21, 21);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content {
+    display: grid;
+    gap: 1.5rem;
+    padding: 1.5rem;
+}
+
+.post{
+    background: rgba(146, 136, 136, 0.438);
+    padding: 1.5rem;
+    box-shadow: 5px 2px 5px rgba(166, 250, 40, 0.192);
+}
+
+a {
+    font-style: normal;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(108, 179, 2);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    text-decoration: underline;
+}
+
+@media (min-width: 600px) {
+    .content {
+        grid-template-columns: repeat(auto-fill, minmax(32rem, 1fr));
+    }
+}
